@@ -4,6 +4,7 @@ services:
 
   drupal:
     image: drupal:8-apache
+    network_mode: host
     ports:
       - 8080:80
     volumes:
